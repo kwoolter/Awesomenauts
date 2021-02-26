@@ -74,8 +74,8 @@ def json_to_HTML(data, template_file_name: str):
                 html = template.render(name=character.get("name"),
                                        skill=skill.get("name"),
                                        skill_stats=skill_stats,
-                                       upgrade=f"{upgrade_name} [${cost}]",
-                                       description=upgrade.get("description"),
+                                       upgrade=f"{upgrade_name}",
+                                       description=upgrade.get("description") + f"<br>Cost [${cost}]",
                                        image=upgrade.get("img"),
                                        skill_image=skill.get("img"),
                                        level1=level_descriptions[0],
@@ -86,7 +86,7 @@ def json_to_HTML(data, template_file_name: str):
                 output += html
 
         # Just do one character for now
-        # break
+        break
         output += "<div></div>"
 
     output += "</body></html>"

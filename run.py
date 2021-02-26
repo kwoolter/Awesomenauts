@@ -8,7 +8,7 @@ def main():
     #create_json_file(x)
 
     json_data_file = "awesomenauts.json"
-    template_file_name = "card_template.html"
+    template_file_name = "card_template2.html"
     output_file_name = "nauts.html"
 
     nauts_json = load_json_file(json_data_file)

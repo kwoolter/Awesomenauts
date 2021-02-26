@@ -10,12 +10,12 @@
     margin: 1px;
 }
 
-/* The header with the River name */
+/* The header with the Awesomenaut name */
 .card_header th {
     background-color: rgb(24, 75, 169);
     color: white;
     font-family: verdana;
-    font-size: 24px;
+    font-size: 20px;
     border: none;
     margin: 0px;
     padding: 1px;
@@ -23,13 +23,37 @@
     vertical-align:center;
 }
 
+/* The Skill Title Bar */
+.skill_header td {
+    background-color: rgb(24, 75, 169);
+    color: white;
+    font-family: verdana;
+    font-size: 13px;
+    border: none;
+    margin: 0px;
+    padding: 4px;
+    vertical-align:center;
+    text-align:center;
+}
+
+/* The Upgrade Title Bar */
+.upgrade_header td {
+    background-color: rgb(24, 75, 169);
+    color: white;
+    font-family: verdana;
+    font-size: 13px;
+    border: none;
+    margin: 0px;
+    padding: 4px;
+    vertical-align:center;
+    text-align:center;
+}
 
 /* top stats section */
 .top td {
     background-color: rgb(199, 235, 251);
     color: black;
     padding: 2px;
-    width: 33%;
 }
 
 /* middle stats section */
