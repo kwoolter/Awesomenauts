@@ -1,0 +1,45 @@
+
+/* Overall card settings */
+.card {
+    font-family: verdana;
+    font-size: 12px;
+    border: 1px solid grey;
+    background-color: white;
+    color: black;
+    padding: 2px;
+    margin: 1px;
+}
+
+/* The header with the River name */
+.card_header th {
+    background-color: rgb(24, 75, 169);
+    color: white;
+    font-family: verdana;
+    font-size: 24px;
+    border: none;
+    margin: 0px;
+    padding: 1px;
+    height:50px;
+    vertical-align:center;
+}
+
+
+/* top stats section */
+.top td {
+    background-color: rgb(199, 235, 251);
+    color: black;
+    padding: 2px;
+    width: 33%;
+}
+
+/* middle stats section */
+.middle td {
+    background-color: rgb(126, 193, 64);
+    color: rgb(250,250,250);
+    padding: 2px;
+}
+
+
+.aligncenter {
+    text-align: center;
+}

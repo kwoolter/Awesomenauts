@@ -1,0 +1,33 @@
+<!-- The start of the card layout table -->
+<table class="card" style="width:8cm;">
+    <tbody>
+    <!-- Top row - header of the card -->
+    <tr class="card_header">
+        <th colspan="2" style="text-align:center;">{{ name }}</th>
+    </tr>
+    <tr class="top">
+        <td style="text-align:center;">{{ skill }}</td>
+        <td style="text-align:center;">{{ upgrade }}</td>
+    </tr>
+    <tr class="top">
+        <td style="color:white;text-align:center;background-image: url({{ skill_image }});background-size:128px auto;background-position: center;background-repeat: no-repeat;">
+            {{ skill_stats }}
+        </td>
+        <td style="text-align:center;padding:8px">
+            <img src="{{ image }}" border=0 height=128 width=128>
+        </td>
+    </tr>
+    <tr class="top">
+        <td colspan="2" style="text-align:center;">{{ description }}</td>
+    </tr>
+    <!-- Second stats section -->
+    <tr class="middle">
+        <td colspan="2" style="text-align:center;">{{ level1 }}</td>
+    </tr>
+    <tr class="middle">
+        <td colspan="2" style="text-align:center;">{{ level2 }}</td>
+    </tr>
+    </tbody>
+</table>
+<!-- The end of the card layout table -->
+<br>
