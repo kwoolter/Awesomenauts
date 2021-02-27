@@ -7,6 +7,8 @@ def main():
     #x = parse_naut_names()
     #create_json_file(x)
 
+    #exit
+
     json_data_file = "awesomenauts.json"
     template_file_name = "card_template2.html"
     output_file_name = "nauts.html"

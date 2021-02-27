@@ -26,6 +26,13 @@ def json_to_HTML(data, template_file_name: str):
         # Get a specific character from the tree
         character = tree.get(character_name)
 
+        # Get their stats
+        character_stats = ""
+        stat_names = ["Health", "Movement Speed", "Attack Type", "Role", "Mobility"]
+        for k in stat_names:
+            v = character.get(k)
+            character_stats += f"{k}:{v}<br>"
+
         # Get their skills list
         skills = character.get('skills')
 
@@ -72,6 +79,8 @@ def json_to_HTML(data, template_file_name: str):
 
                 # Pass all of the data into the renderer to make an html card
                 html = template.render(name=character.get("name"),
+                                       character_image = character.get("img"),
+                                       character_stats = character_stats,
                                        skill=skill.get("name"),
                                        skill_stats=skill_stats,
                                        upgrade=f"{upgrade_name}",
@@ -86,7 +95,7 @@ def json_to_HTML(data, template_file_name: str):
                 output += html
 
         # Just do one character for now
-        break
+        #break
         output += "<div></div>"
 
     output += "</body></html>"

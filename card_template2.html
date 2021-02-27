@@ -5,15 +5,23 @@
     <tr class="card_header">
         <th colspan="2" style="text-align:center;">{{ name }}</th>
     </tr>
+    <tr class="top">
+        <td style="background-color:black;width:25%;">
+            <img src="{{ character_image }}" border=0 width=100>
+        </td>
+        <td style="width:75%;">
+            {{ character_stats }}
+        </td>
+    </tr>
     <!-- Skill information -->
     <tr class="skill_header">
         <td colspan="2" style="text-align:center">Skill: {{ skill }}</td>
     </tr>
     <tr class="top">
-        <td style="text-align:center;padding:4px;width:100px;">
+        <td style="text-align:center;padding:4px;background-color:black;">
             <img src="{{ skill_image }}" border=0 height=100 width=100>
         </td>
-        <td style="text-align:center;">
+        <td style="text-align:left;">
             {{ skill_stats }}
         </td>
     </tr>
@@ -22,7 +30,7 @@
         <td colspan="2">Upgrade: {{ upgrade }}</td>
     </tr>
     <tr class="top">
-        <td style="text-align:center;padding:4px">
+        <td style="text-align:center;padding:4px;background-color:black;">
             <img src="{{ image }}" border=0 height=100 width=100>
         </td>
         <td style="text-align:center;padding:3px;">

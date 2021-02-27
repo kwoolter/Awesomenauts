@@ -156,6 +156,10 @@ def parse_character(character_html, _print=True):
     # Get the chracter's name from the page title
     character_name = character_html.title.string.split("-")[0].strip()
 
+    # Get the character's image file
+    img = character_html.find(class_="Awesomenaut-Portrait").find("img").get("src")
+    img = img[:img.lower().find(".png")+4]
+
     # Find all of the tables in the HTML
     tables = character_html.find_all("table", class_="framed-table")
 
@@ -181,6 +185,7 @@ def parse_character(character_html, _print=True):
         print(f"Name:{character_name}\nAbilities:{abilities}")
 
     character_dict = {"name": character_name,
+                      "img": img,
                       "abilities": abilities}
 
     for stat in stats.columns:
